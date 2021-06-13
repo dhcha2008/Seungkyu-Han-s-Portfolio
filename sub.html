@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>956 Archive</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Barlow:wght@600&family=Tomorrow&family=Turret+Road:wght@200&family=Chakra+Petch:wght@300&family=Nunito+Sans:wght@700&family=DotGothic16&family=Jura:wght@300&family=Codystar:wght@300&family=Darker+Grotesque:wght@300;400&family=Geo&family=Nixie+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<style type="text/css">
+	html{font-family: 'DotGothic16', sans-serif; box-sizing: border-box; scroll-behavior: smooth; background-color: black;}
+	body,h1,h2,p,div,ul,li{margin: 0; padding: 0;}
+	a{text-decoration: none; font-family: 'Barlow', sans-serif; font-weight: 5; word-spacing: -5px; font-size: 6vw; letter-spacing: -1px; padding-top: 20px; color: white; text-align: left; position: relative;}
+	h1{font-family: 'Barlow', sans-serif; font-weight: 5; word-spacing: 5px; font-size: 4vw; letter-spacing: -1px; padding-top: 20px; color: black; text-align: left;
+position: relative; -webkit-text-stroke: 0.5px white;}
+	h2{font-weight: 500; word-spacing: -1px; font-size: 2vw; letter-spacing: -2px; padding-top: 50px; color: black; padding-bottom: 30px; color: white;}
+	h4{font-family: 'DotGothic16', cursive; color: white; font-weight: 100; word-spacing: 1px; font-size: 6vw; letter-spacing: -2px; padding-top: 100px;}
+	p, h3{color: white;}
+	header{background: url(); height: 10%; background-size: 100%;
+		background-attachment: fixed; background-repeat: no-repeat; background-position: 0px -600px;}
+	
+	nav{ z-index: 10; float: left;}
+nav ul{margin:auto; padding-top: 0px; float: left; color: white;}
+nav ul li{list-style-type: none; width: auto;}
+nav ul li a{display: block; line-height: 60px; text-align: left; color: white;}
+nav ul li a:hover{background: none; transition: all 0.8s; color: #50ff00; text-shadow: 0 0 3px #50ff00; font-size: 5.5vw;}
+section{padding-top: 0px; margin-top: 2%; padding-bottom: 2%;}
+footer{background: url(); padding-top: 50px; background-repeat: no-repeat; background-size: 100%}
+img{display: block; width:100%;}
+
+.r1 {border-radius: 10px;}
+.text-right{float: right;}
+.text-left{float: left;}
+.text-vw{font-size: 1vw;}
+.text-center{text-align: center;}
+.wtext{letter-spacing: 3px; padding-top: 0px;}
+.atext{font-size: 1.5em; word-spacing: -3px;}
+.btext{line-height: 40px; word-spacing: 2px; font-size: 1.5em;}
+.ctext{font-size: 2em;}
+.stext{font-size: 1.5vw; padding-bottom: 3px; word-spacing: 0.3px; letter-spacing: 0.7px; color: #50ff00; opacity: 60%;}
+.h1text{border:0.7px solid pink;}
+.text-op{opacity: 100%;}
+.text-op2{opacity: 50%; font-size: 0.7vw;}
+.row{width: 100%; margin: auto;}
+.row1{width: 100%; margin: auto;}
+.text-white{color: white;}
+.text-black{color: black;}
+.text-green{color: #50ff00;}
+.bgfixed{background-attachment: fixed;}
+.col-1{width: 16.66%;}
+.col-2{width: 33.33%;}
+.col-3{width: 50%; padding: 20px;}
+.col-4{width: 90%; margin-left: 30px;}
+.fcol{width: 100% padding-top: 30px;}
+.col-5{width: 60%;padding: 10px;}
+.col-6{width: 40%; padding: 5px;}
+.col-43{width: 90% margin-left:-15px;}
+.bg-white{background: white;}
+.bg-gray{background: gray;}
+.bg-black{background: black;}
+.bg-blue{background: #006699;}
+.h-10{height: 10px;}
+.h-100{height: 100px;}
+.h-50{height: 50px;}
+.h-400{height: 400px;}
+.h-600{height: 600px;}
+.h-800{height: 800px;}
+.h-900{height: 900px;}
+.h-1100{height: 1500px;}
+.flexbox{display: flex;}
+.s1{margin-top: 100px;}
+.row2{width: 1000px; margin: auto; margin-top: 10px; display: flex; padding: 5px;}
+.rcol-1{margin: 0px 5px; width: 490px;}
+.rcol-2{margin: 0px 5px; width: 990px;}
+.footimg{background: url(./img/foot.jpg);
+background-size: 100% auto;
+background-repeat: no-repeat;}
+ul{width: 100%; background: none; height: 5%; float: right;}
+li{background: none; list-style-type: none; width: 50%;height: 5%; text-align: left; padding: 30px;}
+.vcon{position: absolute;
+top: 120%;
+left: 9%;
+z-index: -99;}
+h1:before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	color: #50ff00;
+	overflow: hidden;
+	transition: 0.5s;
+	padding-top: 5%;
+	font-size: 4vw;
+}
+
+.h1r:before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	color: #50ff00;
+	overflow: hidden;
+	transition: 0.5s;
+	padding-top: 7%;
+}
+
+h1:hover:before {
+
+height: 100%;
+-webkit-text-stroke: 1.5px black;
+opacity: 100%
+
+}
+
+.h1r:hover:before {
+
+height: 100%;
+-webkit-text-stroke: 1.5px black;
+opacity: 100%
+
+}
+
+
+
+
+a.jcm-top { position: fixed; right: 5%; bottom: 5%; color: white; text-align: center; font-size: 3vw;  background-color: none; filter:alpha(opacity=80); z-index: 999; display: none; transition: 0.6s ease;}
+.jcm-top:hover{color: #50ff00;}
+.tg:hover{color: #50ff00;}
+
+
+
+
+	</style>
+
+
+</head>
+<body>
+	
+	<header>
+		
+				<h1 data-text="다양한 주제분야에 관심을 가지고 그것들을 다양한 시각적인 방법으로 풀어내는 것을 좋아합니다. 저의 디자인은 주제에 대한 깊이있는 고민에서 시작된다고 말하고 싶습니다. 독특하고 새로운 시도들로 탄생하는 시각언어가 주제가 담긴 메세지를 효과적으로 전달한다고 생각합니다. 여러 관점에서, 여러 주제들에 대해 탐구하고 고민하는 디자이너가 되고자합니다.
+">I like to be interested in various subject areas and solve them in various visual ways. <br>I would like to say that my design starts with a deep concern about the topic. I think the visual language created by unique and new attempts effectively conveys the message with the theme. From many perspectives, <br>I want to be a designer who explores and contemplates various topics.
+</h1>
+
+<h1 class="h1r" data-text="私は多様なテーマに関心を持って多様な視覚的方法で解決するのが好きです。 私のデザインはテーマに対する深い関心から始まると言いたいです。 独特で新しい試みで作られた視覚言語がテーマとともに効果的にメッセージを伝えると思います。 多くの観点から私は多様なテーマを探求して考えるデザイナーになりたいです。
+">Мне нравится быть заинтересованным в различных тематических областях и решать их различными визуальными способами. Хочу сказать, что мой дизайн начинается с глубокой озабоченности по поводу этой темы. Я думаю, визуальный язык, созданный уникальными и новыми попытками эффективно передает сообщение с темой. С многих точек зрения, я хочу быть дизайнером, который исследует и рассматривает различные темы.
+</h1>
+
+
+				
+			<nav>
+		
+			
+<ul class="col-43">
+					<li><a href="index.html">This is CV page.Back to Main!</a></li>
+					
+				</ul>
+			
+		</nav>
+		
+		</header>
+
+	
+</body>
+
+</html>

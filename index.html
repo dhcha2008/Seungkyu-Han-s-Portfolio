@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>956 Archive</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Barlow:wght@600&family=Tomorrow&family=Turret+Road:wght@200&family=Chakra+Petch:wght@300&family=Nunito+Sans:wght@700&family=DotGothic16&family=Jura:wght@300&family=Codystar:wght@300&family=Darker+Grotesque:wght@300;400&family=Geo&family=Nixie+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<style type="text/css">
+	html{font-family: 'DotGothic16', sans-serif; box-sizing: border-box; scroll-behavior: smooth; background-color: black;}
+	body,h1,h2,p,div,ul,li{margin: 0; padding: 0;}
+	a{text-decoration: none; color: white; font-family: 'DotGothic16', cursive; word-spacing: 0.8px; font-size: 2vw;}
+	h1{font-family: 'Barlow', sans-serif; font-weight: 10; word-spacing: 5px; font-size: 6.5vw; letter-spacing: -1px; padding-top: 20px; color: black; text-align: left;}
+	h2{font-weight: 500; word-spacing: -1px; font-size: 2vw; letter-spacing: -2px; padding-top: 50px; color: black; padding-bottom: 30px; color: white;}
+	h4{font-family: 'DotGothic16', cursive; color: white; font-weight: 100; word-spacing: 1px; font-size: 6vw; letter-spacing: -2px; padding-top: 100px;}
+	p, h3{color: white;}
+	header{background: url(); height: 10%; background-size: 100%;
+		background-attachment: fixed; background-repeat: no-repeat; background-position: 0px -600px;}
+	figcaption{color: #50ff00;}
+	
+	nav{margin-left: 10px; z-index: 10; float: left;}
+nav ul{margin:auto; padding-top: 0px; float: left; color: white;}
+nav ul li{list-style-type: none; width: auto;}
+nav ul li a{display: block; line-height: 60px; text-align: left; color: white;}
+nav ul li a:hover{background: none; transition: all 0.8s; color: #50ff00;}
+section{padding-top: 0px; margin-top: 2%; padding-bottom: 2%;}
+footer{background: url(); padding-top: 50px; background-repeat: no-repeat; background-size: 100%}
+img{display: block; width:100%;}
+footer h2 a:hover{background: none; transition: all 0.8s; color: #50ff00;}
+
+.r1 {border-radius: 10px;}
+.text-right{float: right;}
+.text-left{float: left;}
+.text-vw{font-size: 1vw;}
+.text-center{text-align: center;}
+.wtext{letter-spacing: 3px; padding-top: 0px;}
+.atext{font-size: 1.5em; word-spacing: -3px;}
+.btext{line-height: 40px; word-spacing: 2px; font-size: 1.5em;}
+.ctext{font-size: 2em;}
+.stext{font-size: 1.5vw; padding-bottom: 3px; word-spacing: 0.3px; letter-spacing: 0.7px; color: #50ff00; opacity: 60%;}
+.text-op{opacity: 100%;}
+.text-op2{opacity: 50%; font-size: 0.7vw;}
+.row{width: 100%; margin: auto;}
+.row1{width: 100%; margin: auto;}
+.text-white{color: white;}
+.text-black{color: black;}
+.text-green{color: #50ff00;}
+.bgfixed{background-attachment: fixed;}
+.col-1{width: 16.66%;}
+.col-2{width: 33.33%;}
+.col-3{width: 50%; padding: 20px;}
+.col-4{width: 90%; margin-left: 30px;}
+.fcol{width: 100% padding-top: 30px;}
+.col-5{width: 60%;padding: 10px;}
+.col-6{width: 40%; padding: 5px;}
+.col-43{width: 90% margin-left:-15px;}
+.bg-white{background: white;}
+.bg-gray{background: gray;}
+.bg-black{background: black;}
+.bg-blue{background: #006699;}
+.h-10{height: 10px;}
+.h-100{height: 100px;}
+.h-50{height: 50px;}
+.h-400{height: 400px;}
+.h-600{height: 600px;}
+.h-800{height: 800px;}
+.h-900{height: 900px;}
+.h-1200{height: 1200px;}
+.h-1100{height: 1500px;}
+.flexbox{display: flex;}
+.s1{margin-top: 100px;}
+.row2{width: 1000px; margin: auto; margin-top: 10px; display: flex; padding: 5px;}
+.rcol-1{margin: 0px 5px; width: 490px;}
+.rcol-2{margin: 0px 5px; width: 990px;}
+.footimg{background: url(./img/foot.jpg);
+background-size: 100% auto;
+background-repeat: no-repeat;}
+ul{width: 100%; background: none; height: 5%; float: right;}
+li{background: none; list-style-type: none; width: 50%;height: 5%; text-align: left; padding: 30px;}
+.vcon{position: absolute;
+top: 120%;
+left: 9%;
+z-index: -99;}
+h1 p:hover {color: #50ff00;
+text-shadow: 0 0px 3px #50ff00;
+cursor: pointer;}
+
+
+
+.img_box > img { transition: transform 1.5s;}
+.img_box:hover >img {transform: scale(1.2); transition: transform 1.5s; opacity: 30%;}
+
+
+.bannner {position: relative;
+display: inline-block;}
+.bannner img {max-width: 100%;}
+.bannner span.text {font-family: 'DotGothic16', cursive;
+	position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+display: none;
+width: 100%;
+font-size: 1.5vw;
+color: #50ff00;
+font-weight: 900;
+text-align: center;
+}
+.bannner::before, .bannner::after{content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+width: 95%;
+height: 95%;
+transform: translate(-50%,-50%);
+transition: all 1.5s;
+}
+.bannner::before {border-top: 2px solid  #50ff00;
+border-bottom: 2px solid  #50ff00;
+width: 0;}
+.bannner::after {border-left: 2px solid  #50ff00;
+	border-right: 2px solid  #50ff00;
+	height: 0;
+}
+.bannner:hover span.text{display: block;}
+.bannner:hover::before{width: 95%;}
+.bannner:hover::after{height: 95%;}	
+
+
+
+
+* {box-sizing:border-box} 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;}
+  .slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;}
+  .mySlides {
+    display: none;}
+    .mySlides2 {
+    display: none;}
+    .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.prev {
+  left: -50px;
+  border-radius: 3px 3 3 3px;
+  color: #50ff00;
+}
+
+.next {
+  right: -50px;
+  border-radius: 3px 3 3 3px;
+  color: #50ff00;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #50ff00;
+text-shadow: 0 0px 7px #50ff00;
+}
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: none;
+  border-radius: 50%;
+  border:0.7px solid white;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+}
+
+.active, .dot:hover {
+  background-color: #50ff00;
+  box-shadow:  0 0px 7px #50ff00;
+  border: hidden;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+a.jcm-top { position: fixed; right: 5%; bottom: 5%; color: white; text-align: center; font-size: 3vw;  background-color: none; filter:alpha(opacity=80); z-index: 999; display: none; transition: 0.6s ease;}
+.jcm-top:hover{color: #50ff00;}
+.tg:hover{color: #50ff00;}
+
+
+
+.slideshow{margin:0 auto;
+padding-top: 50px;
+width: 600px;
+box-sizing: border-box;}
+.content{margin: auto;
+width: 100%;
+perspective: 1000px;
+position: relative;
+padding-top: 80px;}
+.content-carrousel{width: 80%;
+position: absolute;
+float: right;
+animation:rotar 15s infinite linear;
+transform-style: preserve-3d;}
+.content-carrousel:hover{animation-play-state: paused;
+cursor: pointer;}
+.content-carrousel figure{width: 60%;
+height: 300px;
+border:1px solid #50ff00;
+overflow: hidden;
+position: absolute;}
+.content-carrousel figure:nth-child(1){transform:rotateY(0deg) translateZ(500px);}
+.content-carrousel figure:nth-child(2){transform:rotateY(72deg) translateZ(500px);}
+.content-carrousel figure:nth-child(3){transform:rotateY(144deg) translateZ(500px);}
+.content-carrousel figure:nth-child(4){transform:rotateY(216deg) translateZ(500px);}
+.content-carrousel figure:nth-child(5){transform:rotateY(288deg) translateZ(500px);}
+.content-carrousel figure:nth-child(6){transform:rotateY(300deg) translateZ(500px);}
+.shadow{position: absolute;
+box-shadow: 0px 0px 2px 0px #50ff00;
+border-radius: 2px;}
+.content-carrousel img{image-rendering: auto;
+transition: all 300ms;
+width: 100%;
+height: 100%;}
+.content-carrousel img:hover{transform: scale(1.9);
+transition: all 300ms;}
+@keyframes rotar{from{transform:rotateY(0deg);}
+to{transform: rotateY(360deg);}}
+
+
+        
+         .container{position: relative;width: 100%; cursor: pointer; padding: 40px;}
+         .flower{opacity: 1;
+         	display: block; width: 100%; transition: 1s ease;}
+         .textBox{transition: 1s ease; opacity: 0;
+         	position: absolute; transform: translate(-50%,-50%);
+         	left: 50%; top: 90%;
+         	color: #50ff00; font-family: 'Noto Sans KR', sans-serif; font-size: 0.1rem; padding: 5px 5px; text-align: justify; line-height: 200%; }
+         	.container:hover 
+         	.flower{opacity: 20%;}
+         	.container:hover .textBox{opacity: 100%;}
+         
+         
+
+       
+
+
+
+	</style>
+
+
+</head>
+<body>
+	
+	<header>
+		<div class="row1 text-center ">
+				<h1 class="text-white"><p class="tg" style="display: inline-block;">Seungkyu Han.</p> <br><p class="tg" style="display: inline-block;">Graphic designer</p> based in <p class="tg" style="display: inline-block;"> Seoul.</p><br>His work ranges from <p class="tg" style="display: inline-block;">Graphic,</p> <br><p class="tg" style="display: inline-block;">Typography</p> to <p class="tg" style="display: inline-block;">Interective design.</p><br>
+				All of his projects stem from<br><p class="tg" style="display: inline-block;"> a unique perspective at the subject.</p></h1>
+				
+			<nav>
+		
+			
+<ul class="col-43 flexbox">
+					<li><a href="sub.html">CV</a></li>
+					<li><a href="#a">Han</a></li>
+					<li><a href="#d">Eye,Contact</a></li>
+					<li><a href="#h">Die Verwandlung</a></li>
+					<li><a href="#e">Coding Art</a></li>
+					<li><a href="#c">Contact</a></li>
+				</ul>
+			
+		</nav>
+			</div>
+		</div>
+		</header>
+
+	
+
+
+			<section id="a" class="s1">
+			<div class="col-4 flexbox">
+				
+				<div class="h-100 text-left text-white text-vw">
+					<p style="display: inline-block;">This Website is a portfolio site of designer <strong> <p class="text-green" style="display: inline-block;">&nbsp;Seungkyu Han.</p></strong> 
+					<br>You can see Han's various design projects here.<br>
+					Seungkyu Han is graphic designer who is interested in <br><strong><p class="text-green" style="display: inline-block;">various fields and visually unravels them <br>in various ways.</p></strong>
+</p>
+
+				</div>
+			</div>
+			<section>
+			<div class="col-4 flexbox text-vw">
+				
+				<div class="h-100 text-left text-white" style="display: inline-block;">
+					<p>His design begins with research.<br><p class="text-green" style="display: inline-block;"><strong>Unique and new</p></strong> attempts and visual languages <br>created from research <strong><p class="text-green" style="display: inline-block;">effectively convey message.</p></strong><br>
+					All works on this site are copyrighted by Seungkyu Han.
+
+
+</p>
+				</div>
+			</div>
+
+
+		</section>
+
+		<section class="flexbox">
+<div class="col-2">
+				
+			</div>
+
+			<div class="col-2">
+				<video autoplay="autoplay" muted="muted" loop="loop" height="100%" width="100%" >
+			<source src="img/my.mp4" type="video/mp4">
+		</video>	
+			</div>
+
+			<div class="col-2">
+				
+			</div>
+
+
+
+		
+		</section>
+
+		<section>
+<div id="d" class="col-3 row">
+		<h2 class=" text-center ">Eye, contact<br><i class="stext">
+		It's a poster for a fictional exhibition called eye,contact.</i></h2>
+	
+		<div class="flexbox">
+			<div class="col-3 img_box bannner">
+				<img src="./img/eyec1.png">
+				<span class="text-op text"><i>
+				The first poster is <br>an expression of <br>true communication <br>through eye contact <br>in a noisy world.<br><br><small class="text-op2">594*841mm(A1),Printed on <br>Satin P-Paper,Digital Print</small></i></span>
+			</div>
+			<div class="col-3 img_box bannner">
+				<img src="./img/eyec2.png"><span class="text-op text"><i>
+				The second poster is <br>an expression of <br>the eye called the window of the mind <br>by comparing it <br>to the universe.<br><br><small class="text-op2">594*841mm(A1),Printed on <br>Satin P-Paper,Digital Print</small></i>
+			</span>
+			</div>
+		</div>
+			
+</section>
+<section class="flexbox">
+				<div class="col-2">
+				<img src="./img/eyec1.png">
+			</div>
+
+			<div class="col-2">
+				<img src="./img/eyec1.png">
+			</div>
+
+			<div class="col-2">
+				<img src="./img/eyec1.png">
+			</div>
+
+			</section>
+			<section class="flexbox">
+
+				<div class="col-2">
+				<img src="./img/eyec2.png">
+			</div>
+
+			<div class="col-2">
+				<img src="./img/eyec2.png">
+			</div>
+
+			<div class="col-2">
+				<img src="./img/eyec2.png">
+			</div>
+</section>
+<section class="flexbox">
+			
+				<div class="col-3">
+					<img src="./img/pm.png">
+				</div>
+				<div class="col-3">
+					<img src="./img/pm2.png">
+				</div>
+		
+
+		</section>
+	
+		<section>
+				<div id="h" class="col-3 row">
+		<h2 class=" text-center ">Die Verwandlung
+		<br><i class="stext">Book cover re-design project of Kafka's novel &ulcorn;Die Verwandlung&drcorn;.</i></h2>
+		<div class="flexbox">
+			<div class="col-3 img_box bannner">
+				<img src="./img/die1.jpg">
+				<span class="text-op text"><i>
+				The first cover focused on the title of the novel, Metamorphosis and Confusion that <br>the main character experiences as <br>he turns into a bug.<br><br><small class="text-op2">265*187mm,Printed on Munken<br>Typography-Arita Buri</small></i></span>
+			</div>
+			<div class="col-3 img_box bannner">
+				<img src="./img/die2.jpg"><span class="text-op text"><i>
+				The second book cover focused on the overall dark atmosphere, bizarreness, and grossness of the novel.<br><br><small class="text-op2">265*187mm,Printed on Munken<br>Typography-Arita Buri</small></i>
+			</span>
+			</div>
+		</div>
+		
+		</section>
+	
+			<div class="col-3 row text-center h-900">
+				<div class="slideshow-container">
+<div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="./img/die3.jpg" style="width:100%">
+    <div class="text-green">First.Detail</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="./img/die4.jpg" style="width:100%">
+    <div class="text-green">Second.Detail</div>
+  </div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+</div>
+<section id="e" class="h-1200">
+	<h2 class=" text-center ">Coding Art<br><i class="stext">
+		Various designs in the form of a self-workshop using coding.</i></h2>
+<section class="flexbox">
+	
+		  <section class="slideshow h-1500">
+  <div class="content">
+    <div class="content-carrousel">
+      <figure class="shadow"><div class="container">
+      	<a href="https://youtu.be/84-995WqZd8">
+      	 <img src="./img/land.png" style="width:100%"></a>
+     <div class="textBox"><figcaption><a class="text-green" style="font-size: 1.5vw;" href="https://youtu.be/84-995WqZd8">land</a></figcaption></div>
+  </div></figure>
+
+       <figure class="shadow"> <div class="container">
+<a href="https://youtu.be/vpVrhMgVrtc">
+     <img src="./img/darkview.jpg" style="width:100%"></a>
+    <div class="textBox"><figcaption><a class="text-green" style="font-size: 1.5vw;" href="https://youtu.be/vpVrhMgVrtc">Darkview</a></figcaption></div>
+  </div></figure>
+        <figure class="shadow">
+         <div class="container">
+         	<a href="https://youtu.be/m0Qtk3nJPLc">
+     <img src="./img/pboy.png" style="width:100%"></a>
+    <div class="textBox"><figcaption><a class="text-green" style="font-size: 1.5vw;" href="https://youtu.be/m0Qtk3nJPLc">pboy</a>
+  </figcaption></div>
+  </div></figure>
+
+         <figure class="shadow">
+          <div class="container">
+          	<a href="https://youtu.be/OgZU3cXbtxA">
+     <img src="./img/RGB Circle.png" style="width:100%"></a>
+       <div class="textBox"><figcaption><a class="text-green" style="font-size: 1.5vw;" href="https://youtu.be/OgZU3cXbtxA">Circle</a></figcaption></div>
+  </div></figure>
+<figure class="shadow"><div class="container">
+	<a href="https://youtu.be/hP7SrP8wv7I">
+    <img src="./img/Noised.png" style="width:100%">
+</a>
+     <div class="textBox"><figcaption><a class="text-green" style="font-size: 1.5vw;" href="https://youtu.be/hP7SrP8wv7I">Noised</a></figcaption></div>
+  </div></figure>
+
+
+
+  </div>
+</div>
+</section>
+
+</section>
+
+	
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+$( document ).ready( function() { $( window ).scroll( function() { if ( $( this ).scrollTop() > 800 ) { $( '.jcm-top' ).fadeIn(); } else { $( '.jcm-top' ).fadeOut(); } } ); $( '.jcm-top' ).click( function() { $( 'html, body' ).animate( { scrollTop : 0 }, 600 ); return false; } ); } );
+
+
+</script>
+</div>
+<a href="#" class="jcm-top"><i class="icon icon-arrow-up">
+	&sext;
+</i></a>
+
+		  </section>
+
+
+
+</body>
+<footer id="c">
+	<h2>E-mail:<a href="https://mail.google.com/mail/u/0/#inbox">gkstmdrb2008@gmail.com</a><br>Instagram:<a href="https://www.instagram.com/ratmvl/">@ratmvl</a><br>
+		Behance:<a href="https://www.behance.net/gkstmdrb209f72">Sungkyu Han</a>
+
+	</h2>
+			<div class="fcol h-100">
+				
+				
+				<h4 class="text-center text-green">Thanks.</h4>
+				<p class="text-center text-green text-vw">
+				ⓒ 2021. Designed by Seungkyu Han. Published by Seungkyu Han.</p>
+			
+			</div>
+			
+
+</footer>
+
+</html>
